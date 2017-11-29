@@ -8,7 +8,7 @@ var options = {
     launchReport: true,
     metadata: {
         "App Version": "0.3.2",
-        "Test Environment": "STAGING",
+        "Test Environment": "Demo",
         "Browser": "Chrome  54.0.2840.98",
         "Platform": "Windows 10",
         "Parallel": "Scenarios",
@@ -17,9 +17,3 @@ var options = {
 };
 
 reporter.generate(options);
-
-
-
-//more info on `metadata` is available in `options` section below.
-
-//to generate consodilated report from multi-cucumber JSON files, please use `jsonDir` option instead of `jsonFile`. More info is available in `options` section below.
