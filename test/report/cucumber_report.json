@@ -1,0 +1,3840 @@
+[
+  {
+    "description": "  Httpbin.org exposes various resources for HTTP request testing\n  As Httpbin client I want to verify that all API resources are working as they should",
+    "keyword": "Feature",
+    "name": "",
+    "line": 1,
+    "id": "",
+    "tags": [],
+    "uri": "test\\features\\login_Tech.feature",
+    "elements": [
+      {
+        "id": ";setting-headers-in-get-request",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Setting headers in GET request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I set User-Agent header to apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 968
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "response body path $.headers.User-Agent should be apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-headers-passed-as-datatable-in-get-request",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "checking values of headers passed as datatable in get request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Accept",
+                      "application/json"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "User-Agent",
+                      "apickli"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I set headers to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 931
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "response body path $.headers.Accept should be application/json",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "response body path $.headers.User-Agent should be apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";combine-headers-passed-as-table-and-given-syntax",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "combine headers passed as table and Given syntax",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I set Custom-Header header to abcd",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "User-Agent",
+                      "apickli"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Accept",
+                      "application/json"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I set headers to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "response body path $.headers.Accept should be application/json",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "response body path $.headers.User-Agent should be apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "response body path $.headers.Custom-Header should be abcd",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": ";same-header-field-with-multiple-values",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Same header field with multiple values",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I set Custom-Header header to A",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I set Custom-Header header to B",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Custom-Header",
+                      "C"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Custom-Header",
+                      "D"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I set headers to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:50"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1196
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "response body path $.headers.Custom-Header should be A,B,C,D",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-cookie-in-get-request",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Setting cookie in GET request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "I set cookie to test=value; HttpOnly",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1251
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "response body path $.headers.Cookie should be test=value",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-body-payload-in-post-request",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Setting body payload in POST request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 46,
+            "name": "I set body to {\"key\":\"hello-world\"}",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "response body should contain hello-world",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-body-payload-in-put-request",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Setting body payload in PUT request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "I set body to {\"key\":\"hello-world\"}",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "I PUT /put",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1218
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "response body should contain hello-world",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-body-payload-in-delete-request",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "Setting body payload in DELETE request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "I set body to {\"key\":\"hello-world\"}",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:55"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "I DELETE /delete",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 945
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "response body should contain hello-world",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:183"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-body-payload-from-file",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "Setting body payload from file",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "I pipe contents of file ./test/features/fixtures/requestBody.xml to body",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:60"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8,
+              "error_message": "Error: Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\requestBody.xml'\n    at E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:63:26\n    at ReadFileContext.callback (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:170:13)\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:366:13)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "response body should contain \"<a>b</a>\"",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:183"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";sending-request-with-basic-auth-authentication",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "Sending request with basic auth authentication",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 66,
+            "name": "I have basic authentication credentials username and password",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 67,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 68,
+            "name": "response body path $.headers.Authorization should be Basic dXNlcm5hbWU6cGFzc3dvcmQ=",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": ";parsing-response-xml-body",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Parsing response xml body",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 71,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 843
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 72,
+            "name": "response body path /slideshow/slide[1]/title should be Wake up to WonderWidgets!",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-body-content-type-assertions-(xml)",
+        "keyword": "Scenario",
+        "line": 74,
+        "name": "Response body content type assertions (xml)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 75,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 808
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "response body should be valid xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-body-content-type-assertions-(json)",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "Response body content type assertions (json)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 940
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 80,
+            "name": "response body should be valid json",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-headers-in-response",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "Checking headers in response",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 83,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 84,
+            "name": "response header server should exist",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "response header boo should not exist",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:150"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-code-checks",
+        "keyword": "Scenario",
+        "line": 87,
+        "name": "Response code checks",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 88,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1030
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 89,
+            "name": "response code should be 200",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 90,
+            "name": "response code should not be 404",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:166"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-header-value-assertions",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "Response header value assertions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 93,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 911
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 94,
+            "name": "response header Content-Type should be application/xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "response header Content-Type should be [a-z]/xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "response header Connection should not be boo",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:177"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-body-text-assertions",
+        "keyword": "Scenario",
+        "line": 98,
+        "name": "Response body text assertions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 99,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 995
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 100,
+            "name": "response body should contain WonderWidgets",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 101,
+            "name": "response body should contain Wonder[Wdgist]",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 102,
+            "name": "response body should not contain boo",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:188"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-body-xpath-assertions",
+        "keyword": "Scenario",
+        "line": 104,
+        "name": "Response body xpath assertions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 105,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 106,
+            "name": "response body path /slideshow/slide[2]/title should be [a-z]+",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "response body path /slideshow/slide[2]/title should not be \\d+",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8
+            }
+          }
+        ]
+      },
+      {
+        "id": ";response-body-jsonpath-assertions",
+        "keyword": "Scenario",
+        "line": 109,
+        "name": "Response body jsonpath assertions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 110,
+            "name": "I set User-Agent header to apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 111,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1521
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 112,
+            "name": "response body path $.headers.User-Agent should be [a-z]+",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 113,
+            "name": "response body path $.headers.User-Agent should not be \\d+",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:199"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": ";access-token-retrieval-from-response-body-(authorization-code-grant,-password,-client-credentials)",
+        "keyword": "Scenario",
+        "line": 115,
+        "name": "Access token retrieval from response body (authorization code grant, password, client credentials)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 116,
+            "name": "I set Token header to token123",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 117,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1612
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 118,
+            "name": "I store the value of body path $.headers.Token as access token",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:227"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";using-access-token",
+        "keyword": "Scenario",
+        "line": 120,
+        "name": "Using access token",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 121,
+            "name": "I set bearer token",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:232"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 122,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1213
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 123,
+            "name": "response body path $.headers.Authorization should be Bearer token123",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-header-value-as-variable",
+        "keyword": "Scenario",
+        "line": 125,
+        "name": "setting header value as variable",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 126,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1251
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 127,
+            "name": "I store the value of response header Server as agent in scenario scope",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:252"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1,
+              "error_message": "TypeError: Cannot set property 'agent' of undefined\n    at Apickli.storeValueOfHeaderInScenarioScope (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:324:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:253:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 128,
+            "name": "value of scenario variable agent should be meinheld/0.6.1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:262"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-body-path-as-variable-(xml)",
+        "keyword": "Scenario",
+        "line": 130,
+        "name": "setting body path as variable (xml)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 131,
+            "name": "I GET /xml",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1490
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 132,
+            "name": "I store the value of body path /slideshow/slide[2]/title as title in scenario scope",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:257"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4,
+              "error_message": "TypeError: Cannot set property 'title' of undefined\n    at Apickli.storeValueOfResponseBodyPathInScenarioScope (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:330:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:258:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 133,
+            "name": "value of scenario variable title should be Overview",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:262"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";setting-body-path-as-variable-(json)",
+        "keyword": "Scenario",
+        "line": 135,
+        "name": "setting body path as variable (json)",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 136,
+            "name": "I set User-Agent header to apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 137,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1001
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 138,
+            "name": "I store the value of body path $.headers.User-Agent as agent in scenario scope",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:257"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1,
+              "error_message": "TypeError: Cannot set property 'agent' of undefined\n    at Apickli.storeValueOfResponseBodyPathInScenarioScope (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:330:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:258:22)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 139,
+            "name": "value of scenario variable agent should be apickli",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:262"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-scenario-variables",
+        "keyword": "Scenario",
+        "line": 141,
+        "name": "checking values of scenario variables",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 142,
+            "name": "value of scenario variable title should be undefined",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:262"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1,
+              "error_message": "TypeError: Cannot read property 'title' of undefined\n    at Apickli.assertScenarioVariableValue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:335:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:263:26)"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameters-passed-in-url-in-get-request",
+        "keyword": "Scenario",
+        "line": 144,
+        "name": "checking values of query parameters passed in url in get request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 145,
+            "name": "I GET /get?argument1=1&argument2=test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 925
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 146,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 147,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameter-passed-as-datatable-in-get-request",
+        "keyword": "Scenario",
+        "line": 149,
+        "name": "checking values of query parameter passed as datatable in get request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 150,
+            "name": "I set query parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 154,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1255
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 155,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 156,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameters-passed-in-url-in-post-request",
+        "keyword": "Scenario",
+        "line": 158,
+        "name": "checking values of query parameters passed in url in post request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 159,
+            "name": "I POST to /post?argument1=1&argument2=test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1222
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 160,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 161,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameter-passed-as-datatable-in-post-request",
+        "keyword": "Scenario",
+        "line": 163,
+        "name": "checking values of query parameter passed as datatable in post request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 164,
+            "name": "I set query parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:70"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 168,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1563
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 169,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 170,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameters-passed-in-url-in-put-request",
+        "keyword": "Scenario",
+        "line": 172,
+        "name": "checking values of query parameters passed in url in put request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 173,
+            "name": "I PUT /put?argument1=1&argument2=test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1619
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 174,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 175,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameter-passed-as-datatable-in-put-request",
+        "keyword": "Scenario",
+        "line": 177,
+        "name": "checking values of query parameter passed as datatable in put request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 178,
+            "name": "I set query parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 182,
+            "name": "I PUT /put",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1617
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 183,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 184,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameters-passed-in-url-in-delete-request",
+        "keyword": "Scenario",
+        "line": 186,
+        "name": "checking values of query parameters passed in url in delete request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 187,
+            "name": "I DELETE /delete?argument1=1&argument2=test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 842
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 188,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 189,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameter-passed-as-datatable-in-delete-request",
+        "keyword": "Scenario",
+        "line": 191,
+        "name": "checking values of query parameter passed as datatable in delete request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 192,
+            "name": "I set query parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 196,
+            "name": "I DELETE /delete",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 197,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 198,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameters-passed-in-url-in-patch-request",
+        "keyword": "Scenario",
+        "line": 200,
+        "name": "checking values of query parameters passed in url in patch request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 201,
+            "name": "I PATCH /patch?argument1=1&argument2=test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1880
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 202,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 203,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-query-parameter-passed-as-datatable-in-patch-request",
+        "keyword": "Scenario",
+        "line": 205,
+        "name": "checking values of query parameter passed as datatable in patch request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 206,
+            "name": "I set query parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:70"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 210,
+            "name": "I PATCH /patch",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1574
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 211,
+            "name": "response body path $.args.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 212,
+            "name": "response body path $.args.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-successfully-send-an-options-call-to-target-api-and-assert-response",
+        "keyword": "Scenario",
+        "line": 214,
+        "name": "should successfully send an OPTIONS call to target API and assert response",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 215,
+            "name": "I request OPTIONS for /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 216,
+            "name": "response code should be 200",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:161"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 217,
+            "name": "response header Access-Control-Allow-Credentials should be true",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 218,
+            "name": "response header Access-Control-Allow-Methods should be GET, POST, PUT, DELETE, PATCH, OPTIONS",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 219,
+            "name": "response header Allow should be (.*)OPTIONS(.*)",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 220,
+            "name": "response header Allow should be (.*)GET(.*)",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 221,
+            "name": "response header Allow should be (.*)HEAD(.*)",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 222,
+            "name": "response header Content-Length should be 0",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:172"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-differentiate-between-empty-string-and-non-existing-element-in-json-path-assertions",
+        "keyword": "Scenario",
+        "line": 224,
+        "name": "should differentiate between empty string and non-existing element in JSON path assertions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 225,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 741
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 226,
+            "name": "response code should be 200",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:161"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 227,
+            "name": "response body path $.origin should be [0-9\\.]+",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 228,
+            "name": "response body path $.notthere should be null",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-successfully-validate-json-using-schema",
+        "keyword": "Scenario",
+        "line": 230,
+        "name": "should successfully validate json using schema",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 231,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 232,
+            "name": "response body should be valid according to schema file ./test/features/fixtures/get-simple.schema",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:215"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4,
+              "error_message": "Error: stepContext: \ntestOutput: \n  message: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple.schema'\n  stack: \n    - Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple.schema'\n    -     at Error (native)\n    at Function.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-successfully-validate-json-using-the-openapi-spec-description",
+        "keyword": "Scenario",
+        "line": 234,
+        "name": "should successfully validate json using the OpenAPI spec description",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 235,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 745
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 236,
+            "name": "response body should be valid according to openapi description GetResponse in file ./test/features/fixtures/get-simple-swagger-spec.json",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:221"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3,
+              "error_message": "Error: stepContext: \ntestOutput: \n  message: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple-swagger-spec.json'\n  stack: \n    - Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple-swagger-spec.json'\n    -     at Error (native)\n    at Function.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-successfully-validate-json-array",
+        "keyword": "Scenario",
+        "line": 238,
+        "name": "should successfully validate json array",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 239,
+            "name": "I set body to [\"a\",\"b\",\"c\"]",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 240,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 694
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 241,
+            "name": "response body path $.json should be of type array",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:205"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 242,
+            "name": "response body path $.json should be of type array with length 3",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:210"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-successfully-validate-json-object-array",
+        "keyword": "Scenario",
+        "line": 244,
+        "name": "should successfully validate json object array",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 245,
+            "name": "I set body to [{\"a\":1},{\"b\":2},{\"c\":3}]",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:55"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 246,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 658
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 247,
+            "name": "response body path $.json should be of type array",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:205"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 248,
+            "name": "response body path $.json should be of type array with length 3",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:210"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-form-parameter-passed-as-datatable-in-post-request",
+        "keyword": "Scenario",
+        "line": 250,
+        "name": "checking values of form parameter passed as datatable in post request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 251,
+            "name": "I set form parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 255,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 256,
+            "name": "response body path $.form.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 257,
+            "name": "response body path $.form.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-form-parameter-passed-as-datatable-in-put-request",
+        "keyword": "Scenario",
+        "line": 259,
+        "name": "checking values of form parameter passed as datatable in put request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 260,
+            "name": "I set form parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:75"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 264,
+            "name": "I PUT /put",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1489
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 265,
+            "name": "response body path $.form.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 266,
+            "name": "response body path $.form.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-form-parameter-passed-as-datatable-in-delete-request",
+        "keyword": "Scenario",
+        "line": 268,
+        "name": "checking values of form parameter passed as datatable in delete request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 269,
+            "name": "I set form parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:75"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 273,
+            "name": "I DELETE /delete",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1488
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 274,
+            "name": "response body path $.form.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 275,
+            "name": "response body path $.form.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";checking-values-of-form-parameter-passed-as-datatable-in-patch-request",
+        "keyword": "Scenario",
+        "line": 277,
+        "name": "checking values of form parameter passed as datatable in patch request",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "parameter",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument1",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "argument2",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 278,
+            "name": "I set form parameters to",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 282,
+            "name": "I PATCH /patch",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:125"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1570
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 283,
+            "name": "response body path $.form.argument1 should be 1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 284,
+            "name": "response body path $.form.argument2 should be test",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-successfully-pipe-form-parameters",
+        "keyword": "Scenario",
+        "line": 286,
+        "name": "should successfully pipe form parameters",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 287,
+            "name": "I set Authorization header to Basic abcd",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 288,
+            "name": "I pipe contents of file ./test/features/fixtures/formparams to body",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:60"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Error: Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\formparams'\n    at E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:63:26\n    at ReadFileContext.callback (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:170:13)\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:366:13)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 289,
+            "name": "I POST to /post",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:95"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 290,
+            "name": "response code should be 200",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:161"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 291,
+            "name": "response body path $.data should be a=a&b=b&c=c",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";should-override-the-authorization-header-correctly",
+        "keyword": "Scenario",
+        "line": 293,
+        "name": "should override the authorization header correctly",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "test\\features\\support\\init.js:22"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 294,
+            "name": "I set Authorization header to token1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:40"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 295,
+            "name": "I have basic authentication credentials user1 and password1",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 296,
+            "name": "I GET /get",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1193
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 297,
+            "name": "response body path $.headers.Authorization should be ^Basic dXNlcjE6cGFzc3dvcmQx$",
+            "match": {
+              "location": "node_modules\\apickli\\apickli-gherkin.js:194"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5,
+              "error_message": "Error: stepContext: \ntestOutput: \n  success:  false\n  expected: ^Basic dXNlcjE6cGFzc3dvcmQx$\n  actual:   token1,Basic dXNlcjE6cGFzc3dvcmQx\n  response: \n    statusCode: 200\n    headers: \n      connection:                       close\n      server:                           meinheld/0.6.1\n      date:                             Wed, 29 Nov 2017 05:14:34 GMT\n      content-type:                     application/json\n      access-control-allow-origin:      *\n      access-control-allow-credentials: true\n      x-powered-by:                     Flask\n      x-processed-time:                 0.000667095184326\n      content-length:                   251\n      via:                              1.1 vegur\n    body: \n      \"\"\"\n        {\n          \"args\": {}, \n          \"headers\": {\n            \"Authorization\": \"token1,Basic dXNlcjE6cGFzc3dvcmQx\", \n            \"Cache-Control\": \"no-cache\", \n            \"Connection\": \"close\", \n            \"Host\": \"httpbin.org\"\n          }, \n          \"origin\": \"157.50.14.111\", \n          \"url\": \"http://httpbin.org/get\"\n        }\n        \n      \"\"\"\n    at Function.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
