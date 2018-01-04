@@ -22,7 +22,7 @@ defineSupportCode(function({ Before, setDefaultTimeout }) {
     Before(function() {
         this.apickli = new apickli.Apickli('http', 'httpbin.org');
         this.apickli.addRequestHeader('Cache-Control', 'no-cache');
-        this.apickli.scenarioVariables = config.default;
+        this.apickli.scenarioVariables = {};
     });
 
     setDefaultTimeout(60 * 1000);

@@ -295,3 +295,8 @@ Feature:
         And I have basic authentication credentials user1 and password1
         When I GET /get
         Then response body path $.headers.Authorization should be ^Basic dXNlcjE6cGFzc3dvcmQx$
+@now
+  Scenario: demo business test scenario
+        Given I have valid header
+        When I am requesting data
+        Then valid header is found
