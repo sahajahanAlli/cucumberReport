@@ -1,11 +1,19 @@
 {
-    "name": "myapp",
+    "name": "demoreport",
     "version": "0.0.0",
     "private": true,
     "scripts": {
         "start": "node ./bin/www"
     },
     "dependencies": {
-        "apickli": "latest"
+        "apickli": "latest",
+        "cucumber": "^3.1.0",
+        "run-sequence": "^2.2.0"
+    },
+    "devDependencies": {
+        "cucumber-html-reporter": "^3.0.4",
+        "gulp": "^3.9.1",
+        "gulp-cucumber": "0.0.23",
+        "gulp-shell": "^0.6.3"
     }
 }

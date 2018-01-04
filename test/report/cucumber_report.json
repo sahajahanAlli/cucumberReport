@@ -24,7 +24,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4
+              "duration": 3
             }
           },
           {
@@ -60,7 +60,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 968
+              "duration": 200
             }
           },
           {
@@ -73,7 +73,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14
+              "duration": 3
             }
           }
         ]
@@ -103,8 +103,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -139,8 +138,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:50"
             },
             "result": {
-              "status": "passed",
-              "duration": 2
+              "status": "passed"
             }
           },
           {
@@ -153,7 +151,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 931
+              "duration": 167
             }
           },
           {
@@ -166,7 +164,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3
+              "duration": 1
             }
           },
           {
@@ -178,8 +176,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -199,8 +196,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 6
+              "status": "passed"
             }
           },
           {
@@ -222,8 +218,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -272,7 +267,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1207
+              "duration": 168
             }
           },
           {
@@ -284,8 +279,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -310,8 +304,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 2
+              "status": "passed"
             }
           }
         ]
@@ -341,7 +334,8 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -354,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4
+              "duration": 1
             }
           },
           {
@@ -415,7 +409,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1196
+              "duration": 165
             }
           },
           {
@@ -427,8 +421,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -448,8 +441,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -472,7 +464,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           },
           {
@@ -485,7 +477,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1251
+              "duration": 169
             }
           },
           {
@@ -540,8 +532,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -554,7 +545,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 916
+              "duration": 165
             }
           },
           {
@@ -566,8 +557,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:183"
             },
             "result": {
-              "status": "passed",
-              "duration": 2
+              "status": "passed"
             }
           }
         ]
@@ -610,8 +600,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -624,7 +613,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1218
+              "duration": 166
             }
           },
           {
@@ -657,7 +646,8 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -692,7 +682,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 945
+              "duration": 161
             }
           },
           {
@@ -724,8 +714,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -748,8 +737,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 8,
-              "error_message": "Error: Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\requestBody.xml'\n    at E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:63:26\n    at ReadFileContext.callback (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:170:13)\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:366:13)"
+              "duration": 2,
+              "error_message": "Error: Error: ENOENT: no such file or directory, open 'E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\test\\features\\fixtures\\requestBody.xml'\n    at E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:63:26\n    at ReadFileContext.callback (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli.js:170:13)\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:365:13)"
             }
           },
           {
@@ -816,7 +805,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           },
           {
@@ -829,7 +818,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 715
+              "duration": 164
             }
           },
           {
@@ -842,7 +831,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           }
         ]
@@ -885,7 +874,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 843
+              "duration": 162
             }
           },
           {
@@ -898,7 +887,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 59
+              "duration": 16
             }
           }
         ]
@@ -941,7 +930,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 808
+              "duration": 168
             }
           },
           {
@@ -953,8 +942,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:156"
             },
             "result": {
-              "status": "passed",
-              "duration": 3
+              "status": "passed"
             }
           }
         ]
@@ -974,7 +962,8 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -997,7 +986,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 940
+              "duration": 161
             }
           },
           {
@@ -1009,8 +998,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:156"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -1053,7 +1041,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1167
+              "duration": 169
             }
           },
           {
@@ -1065,8 +1053,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:145"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1079,7 +1066,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7
+              "duration": 1
             }
           }
         ]
@@ -1122,7 +1109,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1030
+              "duration": 162
             }
           },
           {
@@ -1147,8 +1134,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:166"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -1178,8 +1164,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1192,7 +1177,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 911
+              "duration": 162
             }
           },
           {
@@ -1205,7 +1190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1
+              "duration": 4
             }
           },
           {
@@ -1217,8 +1202,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:172"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1230,8 +1214,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:177"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -1274,7 +1257,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 995
+              "duration": 161
             }
           },
           {
@@ -1299,8 +1282,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:183"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1312,8 +1294,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:188"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -1356,7 +1337,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1165
+              "duration": 169
             }
           },
           {
@@ -1369,7 +1350,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15
+              "duration": 5
             }
           },
           {
@@ -1382,7 +1363,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8
+              "duration": 3
             }
           }
         ]
@@ -1402,8 +1383,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1413,8 +1393,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1426,8 +1405,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1440,7 +1418,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1521
+              "duration": 164
             }
           },
           {
@@ -1452,8 +1430,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 2
+              "status": "passed"
             }
           },
           {
@@ -1466,7 +1443,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           }
         ]
@@ -1508,8 +1485,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1522,7 +1498,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1612
+              "duration": 160
             }
           },
           {
@@ -1591,7 +1567,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1213
+              "duration": 159
             }
           },
           {
@@ -1647,7 +1623,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1251
+              "duration": 166
             }
           },
           {
@@ -1661,7 +1637,7 @@
             "result": {
               "status": "failed",
               "duration": 1,
-              "error_message": "TypeError: Cannot set property 'agent' of undefined\n    at Apickli.storeValueOfHeaderInScenarioScope (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:324:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:253:22)"
+              "error_message": "TypeError: Cannot set property 'agent' of undefined\n    at Apickli.storeValueOfHeaderInScenarioScope (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli.js:324:42)\n    at World.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:253:22)"
             }
           },
           {
@@ -1716,7 +1692,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1490
+              "duration": 161
             }
           },
           {
@@ -1729,8 +1705,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 4,
-              "error_message": "TypeError: Cannot set property 'title' of undefined\n    at Apickli.storeValueOfResponseBodyPathInScenarioScope (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:330:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:258:22)"
+              "duration": 1,
+              "error_message": "TypeError: Cannot set property 'title' of undefined\n    at Apickli.storeValueOfResponseBodyPathInScenarioScope (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli.js:330:42)\n    at World.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:258:22)"
             }
           },
           {
@@ -1797,7 +1773,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1001
+              "duration": 167
             }
           },
           {
@@ -1810,8 +1786,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 1,
-              "error_message": "TypeError: Cannot set property 'agent' of undefined\n    at Apickli.storeValueOfResponseBodyPathInScenarioScope (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:330:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:258:22)"
+              "error_message": "TypeError: Cannot set property 'agent' of undefined\n    at Apickli.storeValueOfResponseBodyPathInScenarioScope (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli.js:330:42)\n    at World.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:258:22)"
             }
           },
           {
@@ -1867,7 +1842,7 @@
             "result": {
               "status": "failed",
               "duration": 1,
-              "error_message": "TypeError: Cannot read property 'title' of undefined\n    at Apickli.assertScenarioVariableValue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:335:42)\n    at World.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:263:26)"
+              "error_message": "TypeError: Cannot read property 'title' of undefined\n    at Apickli.assertScenarioVariableValue (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli.js:335:42)\n    at World.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:263:26)"
             }
           }
         ]
@@ -1910,7 +1885,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 925
+              "duration": 165
             }
           },
           {
@@ -1936,7 +1911,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3
+              "duration": 1
             }
           }
         ]
@@ -1956,8 +1931,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -1967,8 +1941,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2003,8 +1976,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:70"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2017,7 +1989,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1255
+              "duration": 169
             }
           },
           {
@@ -2030,7 +2002,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           },
           {
@@ -2042,8 +2014,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -2086,7 +2057,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1222
+              "duration": 174
             }
           },
           {
@@ -2098,8 +2069,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2132,8 +2102,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2191,7 +2160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1563
+              "duration": 170
             }
           },
           {
@@ -2203,8 +2172,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2237,8 +2205,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2261,7 +2228,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1619
+              "duration": 160
             }
           },
           {
@@ -2273,8 +2240,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2287,7 +2253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           }
         ]
@@ -2307,8 +2273,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2367,7 +2332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1617
+              "duration": 166
             }
           },
           {
@@ -2379,8 +2344,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2392,8 +2356,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -2413,8 +2376,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2424,8 +2386,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2438,7 +2399,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 842
+              "duration": 170
             }
           },
           {
@@ -2450,8 +2411,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2463,8 +2423,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -2543,7 +2502,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1233
+              "duration": 164
             }
           },
           {
@@ -2556,7 +2515,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4
+              "duration": 1
             }
           },
           {
@@ -2569,7 +2528,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11
+              "duration": 4
             }
           }
         ]
@@ -2589,7 +2548,8 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -2612,7 +2572,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1880
+              "duration": 171
             }
           },
           {
@@ -2624,8 +2584,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 2
+              "status": "passed"
             }
           },
           {
@@ -2717,7 +2676,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1574
+              "duration": 164
             }
           },
           {
@@ -2729,8 +2688,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 4
+              "status": "passed"
             }
           },
           {
@@ -2742,8 +2700,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -2763,8 +2720,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2787,7 +2743,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 915
+              "duration": 164
             }
           },
           {
@@ -2799,8 +2755,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:161"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2812,8 +2767,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:172"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2837,7 +2791,8 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:172"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -2861,8 +2816,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:172"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2917,7 +2871,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 741
+              "duration": 167
             }
           },
           {
@@ -2941,8 +2895,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -2998,7 +2951,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 748
+              "duration": 161
             }
           },
           {
@@ -3012,7 +2965,7 @@
             "result": {
               "status": "failed",
               "duration": 4,
-              "error_message": "Error: stepContext: \ntestOutput: \n  message: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple.schema'\n  stack: \n    - Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple.schema'\n    -     at Error (native)\n    at Function.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)"
+              "error_message": "Error: stepContext: \ntestOutput: \n  message: ENOENT: no such file or directory, open 'E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\test\\features\\fixtures\\get-simple.schema'\n  stack: \n    - Error: ENOENT: no such file or directory, open 'E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\test\\features\\fixtures\\get-simple.schema'\n    -     at Error (native)\n    at Function.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:649:20)\n    at tryOnImmediate (timers.js:622:5)\n    at processImmediate [as _immediateCallback] (timers.js:594:5)"
             }
           }
         ]
@@ -3055,7 +3008,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 745
+              "duration": 161
             }
           },
           {
@@ -3068,8 +3021,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 3,
-              "error_message": "Error: stepContext: \ntestOutput: \n  message: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple-swagger-spec.json'\n  stack: \n    - Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\get-simple-swagger-spec.json'\n    -     at Error (native)\n    at Function.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)"
+              "duration": 1,
+              "error_message": "Error: stepContext: \ntestOutput: \n  message: ENOENT: no such file or directory, open 'E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\test\\features\\fixtures\\get-simple-swagger-spec.json'\n  stack: \n    - Error: ENOENT: no such file or directory, open 'E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\test\\features\\fixtures\\get-simple-swagger-spec.json'\n    -     at Error (native)\n    at Function.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:649:20)\n    at tryOnImmediate (timers.js:622:5)\n    at processImmediate [as _immediateCallback] (timers.js:594:5)"
             }
           }
         ]
@@ -3089,8 +3042,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3112,8 +3064,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3126,7 +3077,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 694
+              "duration": 170
             }
           },
           {
@@ -3138,8 +3089,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:205"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3207,7 +3157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 658
+              "duration": 170
             }
           },
           {
@@ -3219,8 +3169,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:205"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3263,8 +3212,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3299,8 +3247,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:75"
             },
             "result": {
-              "status": "passed",
-              "duration": 4
+              "status": "passed"
             }
           },
           {
@@ -3313,7 +3260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 791
+              "duration": 159
             }
           },
           {
@@ -3338,8 +3285,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -3359,8 +3305,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3418,7 +3363,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1489
+              "duration": 172
             }
           },
           {
@@ -3430,8 +3375,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3443,8 +3387,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -3475,8 +3418,7 @@
               "location": "test\\features\\support\\init.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3511,7 +3453,8 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:75"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -3524,7 +3467,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1488
+              "duration": 157
             }
           },
           {
@@ -3536,8 +3479,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3549,8 +3491,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -3570,8 +3511,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3616,8 +3556,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:75"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3630,7 +3569,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1570
+              "duration": 162
             }
           },
           {
@@ -3643,7 +3582,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2
+              "duration": 1
             }
           },
           {
@@ -3655,8 +3594,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:194"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           }
         ]
@@ -3698,7 +3636,8 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:40"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1
             }
           },
           {
@@ -3711,7 +3650,8 @@
             },
             "result": {
               "status": "failed",
-              "error_message": "Error: Error: ENOENT: no such file or directory, open 'E:\\Educations\\nodejspract\\cucumberReport\\test\\features\\fixtures\\formparams'\n    at E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:63:26\n    at ReadFileContext.callback (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\apickli\\apickli.js:170:13)\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:366:13)"
+              "duration": 1,
+              "error_message": "Error: Error: ENOENT: no such file or directory, open 'E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\test\\features\\fixtures\\formparams'\n    at E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli-gherkin.js:63:26\n    at ReadFileContext.callback (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\apickli\\apickli.js:170:13)\n    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:365:13)"
             }
           },
           {
@@ -3767,8 +3707,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3802,8 +3741,7 @@
               "location": "node_modules\\apickli\\apickli-gherkin.js:80"
             },
             "result": {
-              "status": "passed",
-              "duration": 1
+              "status": "passed"
             }
           },
           {
@@ -3816,7 +3754,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1193
+              "duration": 162
             }
           },
           {
@@ -3829,8 +3767,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5,
-              "error_message": "Error: stepContext: \ntestOutput: \n  success:  false\n  expected: ^Basic dXNlcjE6cGFzc3dvcmQx$\n  actual:   token1,Basic dXNlcjE6cGFzc3dvcmQx\n  response: \n    statusCode: 200\n    headers: \n      connection:                       close\n      server:                           meinheld/0.6.1\n      date:                             Wed, 29 Nov 2017 05:14:34 GMT\n      content-type:                     application/json\n      access-control-allow-origin:      *\n      access-control-allow-credentials: true\n      x-powered-by:                     Flask\n      x-processed-time:                 0.000667095184326\n      content-length:                   251\n      via:                              1.1 vegur\n    body: \n      \"\"\"\n        {\n          \"args\": {}, \n          \"headers\": {\n            \"Authorization\": \"token1,Basic dXNlcjE6cGFzc3dvcmQx\", \n            \"Cache-Control\": \"no-cache\", \n            \"Connection\": \"close\", \n            \"Host\": \"httpbin.org\"\n          }, \n          \"origin\": \"157.50.14.111\", \n          \"url\": \"http://httpbin.org/get\"\n        }\n        \n      \"\"\"\n    at Function.<anonymous> (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Educations\\nodejspract\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)"
+              "duration": 1,
+              "error_message": "Error: stepContext: \ntestOutput: \n  success:  false\n  expected: ^Basic dXNlcjE6cGFzc3dvcmQx$\n  actual:   token1,Basic dXNlcjE6cGFzc3dvcmQx\n  response: \n    statusCode: 200\n    headers: \n      connection:                       close\n      server:                           meinheld/0.6.1\n      date:                             Wed, 29 Nov 2017 07:36:14 GMT\n      content-type:                     application/json\n      access-control-allow-origin:      *\n      access-control-allow-credentials: true\n      x-powered-by:                     Flask\n      x-processed-time:                 0.00105690956116\n      content-length:                   252\n      via:                              1.1 vegur\n    body: \n      \"\"\"\n        {\n          \"args\": {}, \n          \"headers\": {\n            \"Authorization\": \"token1,Basic dXNlcjE6cGFzc3dvcmQx\", \n            \"Cache-Control\": \"no-cache\", \n            \"Connection\": \"close\", \n            \"Host\": \"httpbin.org\"\n          }, \n          \"origin\": \"134.213.244.38\", \n          \"url\": \"http://httpbin.org/get\"\n        }\n        \n      \"\"\"\n    at Function.<anonymous> (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\cucumber\\lib\\user_code_runner.js:107:21)\n    at throw (native)\n    at tryCatcher (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at PromiseSpawn._promiseRejected (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\generators.js:107:10)\n    at Promise._settlePromise (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:576:26)\n    at Promise._settlePromise0 (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\promise.js:689:18)\n    at Async._drainQueue (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (E:\\Maveric_Dev\\Seikh_Dev\\try\\cucumberReport\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:649:20)\n    at tryOnImmediate (timers.js:622:5)\n    at processImmediate [as _immediateCallback] (timers.js:594:5)"
             }
           }
         ]
